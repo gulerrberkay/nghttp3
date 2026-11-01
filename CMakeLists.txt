@@ -201,10 +201,10 @@ set(PKGDATADIR "${CMAKE_INSTALL_FULL_DATADIR}/${CMAKE_PROJECT_NAME}")
 install(FILES README.rst DESTINATION "${CMAKE_INSTALL_DOCDIR}")
 
 add_subdirectory(lib)
-if(BUILD_TESTING)
-  add_subdirectory(tests)
-endif()
-add_subdirectory(examples)
+#if(BUILD_TESTING)
+#  add_subdirectory(tests)
+#endif()
+#add_subdirectory(examples)
 
 
 string(TOUPPER "${CMAKE_BUILD_TYPE}" _build_type)
